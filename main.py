@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from transformers import pipeline
 from flask import Flask,render_template,request,redirect, url_for
 import pyrebase
