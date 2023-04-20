@@ -1,15 +1,41 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./main.py",
-            "use": "@vercel/python"
-        }
+      {
+        "src": "main.py",
+        "use": "@vercel/python"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+      {
+        "src": "/",
+        "dest": "/"
+      },
+      {
+        "src": "/register",
+        "dest": "/register"
+      },
+      {
+        "src": "/index",
+        "dest": "/index"
+      },
+      {
+        "src": "/generate",
+        "dest": "/generate",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/result",
+        "dest": "/result"
+      },
+      {
+        "src": "/logout",
+        "dest": "/logout"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
     ]
-}
+  }
+  
